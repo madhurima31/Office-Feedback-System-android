@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+    <android.widget.RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/colorPrimary"
+        tools:context="com.example.madhu.inradius.LoginRegister"
+        >
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:weightSum="1"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true">
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="330dp"
+                    android:id="@+id/rel"
+                    android:background="#ffffff">
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerInParent="true"
+                        android:orientation="horizontal">
+                        <ImageView
+                            android:layout_width="140dp"
+                            android:layout_centerHorizontal="true"
+                            android:layout_centerVertical="true"
+                            android:src="@drawable/pnglogo"
+
+                            android:layout_marginBottom="70dp"
+
+
+                            android:layout_height="180dp" />
+                        <ImageView
+                            android:layout_width="150dp"
+                            android:layout_centerHorizontal="true"
+                            android:layout_centerVertical="true"
+                            android:src="@drawable/inradiuslogo"
+                            android:id="@+id/imageview"
+                            android:layout_marginBottom="70dp"
+
+
+                            android:layout_height="180dp" />
+                    </LinearLayout>
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+
+                        android:layout_marginTop="320dp"
+
+                        android:background="@color/colorPrimary"
+                        android:layout_alignParentLeft="true"
+                        android:layout_alignParentStart="true">
+
+                    </View>
+
+                </RelativeLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="30dp"
+                    android:weightSum="2">
+                    <Button
+                        android:id="@+id/login"
+                        android:layout_width="wrap_content"
+                        android:layout_weight="1"
+                        android:layout_height="40dp"
+                        android:layout_gravity="center_horizontal"
+                        android:layout_margin="10dp"
+
+                        android:background="@drawable/circle_button_border"
+
+                        android:text="LOGIN"
+                        android:textColor="@color/colorPrimary" />
+                    <Button
+                        android:id="@+id/register"
+                        android:layout_width="wrap_content"
+                        android:layout_weight="1"
+                        android:layout_height="40dp"
+                        android:layout_gravity="center_horizontal"
+                        android:layout_margin="10dp"
+                        android:background="@drawable/circle_button_border"
+
+                        android:text="REGISTER"
+                        android:textColor="@color/colorPrimary" />
+                </LinearLayout>
+
+
+
+
+
+            </LinearLayout>
+
+        </ScrollView>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:gravity="center_horizontal"
+
+        android:text="* Only for HighRadius Employees"
+        android:paddingBottom="20dp"
+        android:textColor="#ffffff"
+        android:textStyle="italic" />
+    </android.widget.RelativeLayout>
+
+

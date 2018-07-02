@@ -1,3 +1,4 @@
 <resources>
     <string name="app_name">InRadius</string>
+    <string name="title_activity_login_register">LoginRegister</string>
 </resources>
