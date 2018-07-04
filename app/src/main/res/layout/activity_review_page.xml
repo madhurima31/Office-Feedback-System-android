@@ -196,7 +196,7 @@
         <CheckBox
             android:layout_marginLeft="20dp"
             android:layout_marginBottom="10dp"
-            android:paddingLeft="20dp"
+            android:paddingLeft="10dp"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:checked="true"

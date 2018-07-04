@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+    <RelativeLayout
+        android:layout_width="450dp"
+        android:layout_height="wrap_content"
+       >
+
+        <de.hdodenhof.circleimageview.CircleImageView xmlns:app="http://schemas.android.com/apk/res-auto"
+            android:id="@+id/circleImageView"
+            android:layout_width="160dp"
+            android:layout_height="160dp"
+
+            android:layout_alignParentRight="true"
+            android:layout_marginTop="19dp"
+
+            android:layout_marginRight="48dp"
+            android:src="@drawable/sk"
+            app:civ_border_color="#fff"
+            app:civ_border_width="2dp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginTop="30dp"
+            android:layout_marginBottom="16dp"
+            android:layout_marginLeft="24dp">
+            <TextView
+                android:id="@+id/topic"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Sandeep Kumar"
+
+                android:textSize="23dp"
+                android:textColor="@color/colorPrimaryDark"
+                android:textStyle="bold"/>
+            <TextView
+                android:id="@+id/designation"
+                android:paddingTop="5dp"
+                android:paddingBottom="3dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/grey"
+                android:text="Software Engineer Intern " />
+            <TextView
+                android:id="@+id/dept"
+
+                android:paddingBottom="5dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/colorPrimary"
+                android:textSize="12dp"
+                android:textStyle="italic"
+                android:text="Dept. RnD " />
+
+        </LinearLayout>
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="8dp"
+       >
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Your Reviews"
+            android:textSize="15dp"
+            android:textColor="@color/colorPrimaryDark"
+            android:textStyle="bold"
+            android:paddingLeft="15dp"/>
+
+        <android.support.v7.widget.RecyclerView
+            android:layout_width="match_parent"
+            android:layout_height="500dp"
+            android:padding="8dp"
+            android:id="@+id/recyclerReview">
+        </android.support.v7.widget.RecyclerView>
+    </LinearLayout>
+</LinearLayout>
